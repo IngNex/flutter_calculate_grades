@@ -1,4 +1,4 @@
-import 'package:calcular_notas/interface/pages/calculate_notes.dart';
+import 'package:calcular_notas/interface/pages/home_page.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,13 +11,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Calculando Notas',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home:  CalculateScreen(),
+      home:  HomeScreen(),
     );
   }
 }
