@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CalculateScreen extends StatefulWidget {
+  const CalculateScreen({super.key});
+
   @override
   _CalculateScreenState createState() => _CalculateScreenState();
 }

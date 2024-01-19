@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class HistoryCalculateScreen extends StatefulWidget {
+  const HistoryCalculateScreen({super.key});
+
   @override
   _HistoryCalculateState createState() => _HistoryCalculateState();
 }
@@ -56,34 +58,34 @@ class _HistoryCalculateState extends State<HistoryCalculateScreen> {
             TextField(
               controller: p1Controller,
               keyboardType: TextInputType.number,
-              decoration: InputDecoration(labelText: 'P1'),
+              decoration: const InputDecoration(labelText: 'P1'),
             ),
             TextField(
               controller: p2Controller,
               keyboardType: TextInputType.number,
-              decoration: InputDecoration(labelText: 'P2'),
+              decoration: const InputDecoration(labelText: 'P2'),
             ),
             TextField(
               controller: p3Controller,
               keyboardType: TextInputType.number,
-              decoration: InputDecoration(labelText: 'P3'),
+              decoration: const InputDecoration(labelText: 'P3'),
             ),
             TextField(
               controller: p4Controller,
               keyboardType: TextInputType.number,
-              decoration: InputDecoration(labelText: 'P4'),
+              decoration: const InputDecoration(labelText: 'P4'),
             ),
             TextField(
               controller: nota1Controller,
               keyboardType: TextInputType.number,
-              decoration: InputDecoration(labelText: 'Nota 1'),
+              decoration: const InputDecoration(labelText: 'Nota 1'),
             ),
             TextField(
               controller: nota2Controller,
               keyboardType: TextInputType.number,
-              decoration: InputDecoration(labelText: 'Nota 2'),
+              decoration: const InputDecoration(labelText: 'Nota 2'),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             ElevatedButton(
               onPressed: () {
                 double finalGrade = calculateFinalGrade();
@@ -103,9 +105,9 @@ class _HistoryCalculateState extends State<HistoryCalculateScreen> {
                   ),
                 );
               },
-              child: Text('Calcular Nota Final'),
+              child: const Text('Calcular Nota Final'),
             ),
-            SizedBox(height: 20),
+            const SizedBox(height: 20),
             Expanded(
               child: ListView.builder(
                 itemCount: historicalEntries.length,
