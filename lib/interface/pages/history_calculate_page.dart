@@ -26,6 +26,7 @@ class _HistoryCalculateState extends State<HistoryCalculateScreen> {
     double nota2 = double.tryParse(nota2Controller.text) ?? 0.0;
 
     double finalGrade = ((p1 + p2 + p3 + p4) / 4 * 0.4) + (nota1 * 0.3) + (nota2 * 0.3);
+    finalGrade = (finalGrade * 10.0).round() / 10.0;
 
     // Agregar todas las notas al historial
     // Agregar todas las notas al historial
