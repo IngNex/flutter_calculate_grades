@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
       title: 'Calculando Notas',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 16, 55, 195)),
         useMaterial3: true,
       ),
       home:  HomeScreen(),

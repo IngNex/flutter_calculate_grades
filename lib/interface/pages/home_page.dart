@@ -1,5 +1,6 @@
 import 'package:calcular_notas/interface/pages/calculate_notes_page.dart';
 import 'package:calcular_notas/interface/pages/history_calculate_page.dart';
+import 'package:calcular_notas/interface/pages/ui_calculate_note_page.dart';
 import 'package:flutter/material.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -41,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
               ElevatedButton(
                 onPressed: () => Navigator.of(context).push(
                   MaterialPageRoute(
-                    builder: (context) => CalculateScreen(),
+                    builder: (context) => const CalculateScreen(),
                   ),
                 ),
                 child: const Text('Calcula Notas'),
@@ -50,7 +51,16 @@ class _HomeScreenState extends State<HomeScreen> {
               ElevatedButton(
                 onPressed: () => Navigator.of(context).push(
                   MaterialPageRoute(
-                    builder: (context) => HistoryCalculateScreen(),
+                    builder: (context) => const DesingCalculateScreen(),
+                  ),
+                ),
+                child: const Text('Calcula Notas Diseño'),
+              ),
+              const SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () => Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (context) => const HistoryCalculateScreen(),
                   ),
                 ),
                 child: const Text('Calcula Notas con historial'),
