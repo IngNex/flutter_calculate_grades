@@ -82,6 +82,10 @@ class _HomeScreenState extends State<HomeScreen> {
                           '❤️ mi kathita ❤️',
                           style: TextStyle(fontSize: 24),
                         ),
+                        Text(
+                          '❤️ eres el amor de mi vida 🐼🐻 ❤️',
+                          style: TextStyle(fontSize: 24),
+                        ),
                       ],
                     )
                   : Container(),
